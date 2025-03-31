@@ -1,0 +1,160 @@
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    border-right: 1px solid rgb(62, 65, 68);
+}
+
+.nav-link {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+
+    margin: 0;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+
+.nav-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-container a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 1em;
+    
+    text-decoration: none;
+}
+
+#nav-container a:hover {
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.current {
+    font-weight: 600;
+}
+
+/*BTNS*/
+button {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#toggle-theme {
+    display: none;
+}
+
+#toggle-theme img {
+    width: 20px;
+}
+
+/*PROFILE*/
+#user-profile {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+#user-profile:hover {
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0 3px;
+}
+
+#profile-menu {
+    position: absolute;
+    bottom: 50px;
+    left: -30px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    background-color: #fff;
+    
+    display: none;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+#sidebar-bottom {
+    width: 100%;
+}
+
+
+#profile-pic {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1150px) {
+    #nav-container h4 {
+        display: none;
+    }
+
+    #nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #top-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-container a {
+        padding: 10px;
+        width: 3em;
+        border-radius: 100%;
+    }
+}

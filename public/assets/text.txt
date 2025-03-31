@@ -1,0 +1,7 @@
+Base de données - Updates
+
+Archive : mettre un booléen sur les tweets (à la place de la table)
+
+Messages : user_id (changer valeur)
+
+

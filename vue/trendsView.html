@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Trends</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/explore.css">
+    <link rel="stylesheet" href="../public/css/interests.css">
+    <link rel="stylesheet" href="../public/css/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="../public/css/Skeleton-2.0.4/css/skeleton.css">
+    
+    <!--JS-->
+    <script></script>
+</head>
+<body>
+    <div id="container" class="container row">
+        <!--NAVBAR - LEFT SECTION-->
+        <nav id="sidebar" class="three columns" aria-label="navbar">
+            <div id="sidebar-top">
+                <img id="logo" src="" alt="logo">
+                <ul>
+                    <li id="nav-home"><a href="#">Accueil</a></li>
+                    <li id="nav-explore"><a href="#">Explorer</a></li>
+                    <li id="nav-messages"><a href="#">Messagerie</a></li>
+                    <li id="nav-profile"><a href="#">Profil</a></li>
+                    <li id="nav-settings"><a href="#">Paramètres</a></li>
+                </ul>
+                <a href="">Post</a>
+            </div>
+            <div id="sidebar-bottom">
+                <div id="theme-toggle">
+                    <button id="toggle-theme">DARK</button>
+                </div>
+    
+                <div id="user-profile">
+                    <img id="profile-pic" src="" alt="Profil">
+                    <span id="username">Pseudo...</span>
+                </div>
+    
+                <div id="profile-menu">
+                    <button id="switch-account">Changer de compte</button>
+                    <button id="logout">Se déconnecter</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!--TRENDS - MIDDLE SECTION-->
+        <main id="trends-content" class="six columns">
+            <nav aria-label="trends-nav">
+                <h3>Top</h3><!--Posts les plus likés-->
+                <h3>Derniers</h3><!--Derniers posts avec ce hashtag-->
+            </nav>
+            <section id="tweets-list">
+                <!--LES TWEETS SERONT ICI-->
+                <article class="tweet">
+                    <p id="tweet-username">Pseudo</p>
+                    <div id="tweet-content">
+                        <p id="tweet-text">Ceci est un tweet</p>
+                        <div id="tweet-media"></div>
+                    </div>
+                    <div id="tweet-footer">
+                        <div id="comment">
+                            <img src="" alt="Commenter">
+                            <p id="comments-number"></p>
+                        </div>
+                        <div id="repost">
+                            <img src="" alt="Reposter">
+                            <p id="reposts-number"></p>
+                        </div>
+                        <div id="like">
+                            <img src="" alt="Liker">
+                            <p id="likes-number"></p>
+                        </div>
+                        <div id="comment">
+                            <img src="" alt="Commenter">
+                            <p id="comments-number"></p>
+                        </div>
+                        <div id="archive">
+                            <img src="" alt="Archiver">
+                            <p id="archives-number"></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <!--TRENDS - RIGHT SECTION-->
+        <aside id="trends" class="three columns">
+            <section id="hashtags">
+                <input type="text" id="hashtag-search" placeholder="Rechercher un hashtag...">
+                <button id="hashtag-search-button">Rechercher</button>
+                <h3>Tendances</h3>
+                <ul>
+                    <li class="trend-item" id="trend-1">#Exemple</li>
+                    <li class="trend-item" id="trend-2">#TweetAcademie</li>
+                </ul>
+            </section>
+            <section id="suggestions">
+                <h3>Suggestions</h3>
+                <ul>
+                    <li class="suggest-item" id="suggest-user1">@User1</li>
+                    <li class="suggest-item" id="suggest-user2">@User2</li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>

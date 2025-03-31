@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Accueil</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/message.css">
+    <link rel="stylesheet" href="../public/css/Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="../public/css/Skeleton-2.0.4/css/skeleton.css">
+    
+    <!--JS-->
+    <script></script>
+</head>
+<body>
+    <div id="container" class="container row">
+        <!--NAVBAR - LEFT SECTION-->
+        <nav id="sidebar" class="three columns">
+            <div id="sidebar-top">
+                <img id="logo" src="" alt="logo">
+                <ul>
+                    <li id="nav-home"><a href="#">Accueil</a></li>
+                    <li id="nav-explore"><a href="#">Explorer</a></li>
+                    <li id="nav-messages" class="current"><a href="#">Messagerie</a></li>
+                    <li id="nav-profile"><a href="#">Profil</a></li>
+                    <li id="nav-settings"><a href="#">Paramètres</a></li>
+                </ul>
+                <a href="">Post</a>
+            </div>
+            <div id="sidebar-bottom">
+                <div id="theme-toggle">
+                    <button id="toggle-theme">DARK</button>
+                </div>
+    
+                <div id="user-profile">
+                    <img id="profile-pic" src="" alt="Profil">
+                    <span id="username">Pseudo...</span>
+                </div>
+    
+                <div id="profile-menu">
+                    <button id="switch-account">Changer de compte</button>
+                    <button id="logout">Se déconnecter</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!--SOCIAL FEED - MIDDLE SECTION-->
+        <main id="exchanges-container" class="nine columns">
+            <section id="message-contacts" class="four columns">
+                <div id="message-header">
+                    <h5>Messages</h5>
+                    <a href=""><img id="options" src="" alt="Options de messagerie"></a>
+                    <a href=""><img id="new" src="" alt="Nouveau message"></a>
+                </div>
+                <div id="contacts-list">
+                    <h4>Bienvenue sur la messagerie privée</h4>
+                    <p>
+                        Partagez vos postes préférés et plus encore avec 
+                        d’autres utilisateurs MyTwitter
+                    </p>
+                    <a href="">Ecrire un message</a>
+                </div>
+            </section>
+
+            <section id="message-container" class="five columns">
+                <div id="messages">
+                    <h4>
+                        Ici seront affichés vos messages
+                        avec vos amis
+                    </h4>
+                    <p>Commencer une conversation avec un utilisateur MyTwitter</p>
+                    <a href="">Nouveau message</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

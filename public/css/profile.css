@@ -1,0 +1,48 @@
+main {
+    margin: 0;
+}
+
+
+/*BANNER SECTION*/
+#banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 10em;
+    background-color: rgb(62, 65, 68);
+}
+
+#user-picture {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 4px solid #fff;
+    border-radius: 100%;
+}
+
+
+/*PROFILE SECTION*/
+#profile-info {
+    margin-top: 80px;
+    padding: 0 1%;
+}
+
+
+/*TWEET SECTION*/
+#tweet-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 550px) {
+    .column,
+    .columns {
+      margin-left: 0;
+    }
+}
